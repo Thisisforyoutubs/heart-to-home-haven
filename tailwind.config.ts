@@ -52,6 +52,17 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				comfort: {
+					warm: 'hsl(var(--comfort-warm))',
+					cool: 'hsl(var(--comfort-cool))',
+					soft: 'hsl(var(--comfort-soft))'
+				},
+				love: {
+					glow: 'hsl(var(--love-glow))'
+				},
+				memory: {
+					gold: 'hsl(var(--memory-gold))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,11 +95,40 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'gentle-bounce': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-4px)' }
+				},
+				'fade-in': {
+					'0%': { opacity: '0', transform: 'translateY(10px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
+				},
+				'heart-pulse': {
+					'0%, 100%': { transform: 'scale(1)' },
+					'50%': { transform: 'scale(1.05)' }
+				},
+				'comfort-glow': {
+					'0%, 100%': { boxShadow: '0 4px 20px hsl(340 20% 80% / 0.15)' },
+					'50%': { boxShadow: '0 8px 25px hsl(25 30% 70% / 0.3)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'gentle-bounce': 'gentle-bounce 2s ease-in-out infinite',
+				'fade-in': 'fade-in 0.6s ease-out',
+				'heart-pulse': 'heart-pulse 2s ease-in-out infinite',
+				'comfort-glow': 'comfort-glow 3s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'gradient-comfort': 'var(--gradient-comfort)',
+				'gradient-memory': 'var(--gradient-memory)',
+				'gradient-calm': 'var(--gradient-calm)'
+			},
+			boxShadow: {
+				'gentle': 'var(--shadow-gentle)',
+				'warm': 'var(--shadow-warm)'
 			}
 		}
 	},

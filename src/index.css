@@ -8,35 +8,56 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Warm, cozy pastel palette for emotional comfort */
+    --background: 20 50% 98%;
+    --foreground: 340 15% 25%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 15 100% 97%;
+    --card-foreground: 340 15% 25%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 15 100% 97%;
+    --popover-foreground: 340 15% 25%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Soft lavender as primary for calmness */
+    --primary: 280 25% 65%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Warm peach secondary */
+    --secondary: 25 35% 88%;
+    --secondary-foreground: 340 15% 35%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Soft mint muted */
+    --muted: 140 20% 92%;
+    --muted-foreground: 340 10% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Gentle rose accent */
+    --accent: 340 30% 85%;
+    --accent-foreground: 340 15% 35%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 65% 70%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 25 25% 90%;
+    --input: 25 25% 90%;
+    --ring: 280 25% 65%;
 
-    --radius: 0.5rem;
+    /* Custom emotional support colors */
+    --comfort-warm: 25 45% 85%;
+    --comfort-cool: 200 30% 88%;
+    --comfort-soft: 280 20% 92%;
+    --love-glow: 340 40% 88%;
+    --memory-gold: 45 35% 85%;
+
+    /* Gradients for warmth */
+    --gradient-comfort: linear-gradient(135deg, hsl(25 45% 95%), hsl(340 30% 92%));
+    --gradient-memory: linear-gradient(135deg, hsl(45 35% 90%), hsl(25 45% 88%));
+    --gradient-calm: linear-gradient(135deg, hsl(200 30% 92%), hsl(280 20% 90%));
+
+    /* Soft shadows */
+    --shadow-gentle: 0 4px 20px hsl(340 20% 80% / 0.15);
+    --shadow-warm: 0 8px 25px hsl(25 30% 70% / 0.2);
+
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
 
